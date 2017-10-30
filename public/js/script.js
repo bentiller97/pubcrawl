@@ -3,4 +3,4 @@ $.getJSON('mydata.json', function(data){
     for (var i = 0; i < myData.length; i++){
         $('#content_test').append(myData[i].test + "<br />");
     }
-});
+}); // this function parses the mydata.json file and appends all entries to the test div
