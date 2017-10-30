@@ -18,6 +18,6 @@ MongoClient.connect(url, function(err, db){ //connect to database
         if (err) throw err;
         var json = JSON.stringify(res); // convert BSON to JSON string
         fs.writeFile('public/myData.json', json, 'utf8'); // write JSON file including all data in collection
-        db.close(); // close database at end of operation
+        db.close(); // close database
     })
 });
